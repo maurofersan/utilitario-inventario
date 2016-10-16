@@ -4,13 +4,13 @@
 	<groupId>com.mauro</groupId>
 	<artifactId>utilitario-01</artifactId>
 	<version>1.2</version>
-	
+
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -19,7 +19,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	
+
 	<build>
 		<plugins>
 			<plugin>
@@ -53,15 +53,16 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-clean-plugin</artifactId>
-					<executions>
-						<execution>
-							<id>ejecuta-plugin-clean-cuando-haces-initialize</id>
-							<goals>
-								<goal>initialize</goal>
-							</goals>
-							<phase>clean</phase>
-						</execution>
-					</executions>
+				<version>3.0.0</version>
+				<executions>
+					<execution>
+						<id>ejecuta-plugin-clean-cuando-haces-initialize</id>
+						<goals>
+							<goal>initialize</goal>
+						</goals>
+						<phase>clean</phase>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>

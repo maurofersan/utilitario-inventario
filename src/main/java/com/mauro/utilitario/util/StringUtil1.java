@@ -110,7 +110,7 @@ public class StringUtil1 {
 	 * StringUtil.capitalizeAllWords("hola mundo") return "Hola Mundo"
 	 * StringUtil.capitalizeAllWords("java wOrld") return "Java World"
 	 * 
-	 * <pre>
+	 * </pre>
 	 * </blockquote>
 	 * 
 	 * @since 1.2
