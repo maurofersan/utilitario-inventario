@@ -12,7 +12,7 @@ import org.junit.BeforeClass;
 //import org.junit.Ignore;
 import org.junit.Test;
 
-import com.mauro.utilitario.util.StringUtil1;
+import com.mauro.utilitario.util.StringUtil;
 
 //@Ignore("Ignorado por no haber terminado aun")
 public class StrinUtilTest1 {
@@ -37,54 +37,54 @@ public class StrinUtilTest1 {
 	@Test
 	public void capitalizeTest() {
 		System.out.println("capitalizeTest()");
-		assertEquals(StringUtil1.capitalize("java"), "Java");
-		assertEquals(StringUtil1.capitalize(""), "");
-		assertTrue(StringUtil1.capitalize("h").equals("H"));
-		assertNull(StringUtil1.capitalize(null));
+		assertEquals(StringUtil.capitalize("java"), "Java");
+		assertEquals(StringUtil.capitalize(""), "");
+		assertTrue(StringUtil.capitalize("h").equals("H"));
+		assertNull(StringUtil.capitalize(null));
 	}
 
 	@Test
 	public void truncateTest() {
 		System.out.println("truncateTest()");
-		assertEquals(StringUtil1.truncate("", 2), "");
-		assertTrue(StringUtil1.truncate("java", 10).equals("java"));
-		assertNull(StringUtil1.truncate(null, 1));
+		assertEquals(StringUtil.truncate("", 2), "");
+		assertTrue(StringUtil.truncate("java", 10).equals("java"));
+		assertNull(StringUtil.truncate(null, 1));
 	}
 
 	@Test
 	public void timesTest() {
 		System.out.println("timesTest()");
-		assertEquals(StringUtil1.times("", 2), "");
-		assertTrue(StringUtil1.times("java", 2).equals("javajava"));
-		assertNull(StringUtil1.times(null, 2));
+		assertEquals(StringUtil.times("", 2), "");
+		assertTrue(StringUtil.times("java", 2).equals("javajava"));
+		assertNull(StringUtil.times(null, 2));
 	}
 	@Test
 	public void reverseTest() {
 		System.out.println("reverseTest()");
-		assertEquals(StringUtil1.reverse("hello"), "olleh");
-		assertTrue(StringUtil1.reverse("").equals(""));
-		assertNull(StringUtil1.reverse(null));
+		assertEquals(StringUtil.reverse("hello"), "olleh");
+		assertTrue(StringUtil.reverse("").equals(""));
+		assertNull(StringUtil.reverse(null));
 	}
 	@Test
 	public void capitalizeAllWordsTest() {
 		System.out.println("capitalizeAllWordsTest()");
-		assertEquals(StringUtil1.capitalizeAllWords("  hello   world1"), "  Hello   World1");
-		assertTrue(StringUtil1.capitalizeAllWords("").equals(""));
-		assertNull(StringUtil1.capitalizeAllWords(null));
+		assertEquals(StringUtil.capitalizeAllWords("  hello   world1"), "  Hello   World1");
+		assertTrue(StringUtil.capitalizeAllWords("").equals(""));
+		assertNull(StringUtil.capitalizeAllWords(null));
 	}
 	@Test
 	public void swapCaseTest() {
 		System.out.println("swapCaseTest()");
-		assertEquals(StringUtil1.swapCase(""), "");
-		assertTrue(StringUtil1.swapCase(" hW  a").equals(" Hw  A"));
-		assertNull(StringUtil1.swapCase(null));
+		assertEquals(StringUtil.swapCase(""), "");
+		assertTrue(StringUtil.swapCase(" hW  a").equals(" Hw  A"));
+		assertNull(StringUtil.swapCase(null));
 	}
 	@Test
 	public void fullTrim() {
 		System.out.println("fullTrim()");
-		assertEquals(StringUtil1.fullTrim(" h    1w   q"), "h 1w q");
-		assertTrue(StringUtil1.fullTrim("").equals(""));
-		assertNull(StringUtil1.fullTrim(null));
+		assertEquals(StringUtil.fullTrim(" h    1w   q"), "h 1w q");
+		assertTrue(StringUtil.fullTrim("").equals(""));
+		assertNull(StringUtil.fullTrim(null));
 	}
 	@Test
 	public void assetSameAndEqualsTest() {
@@ -97,9 +97,9 @@ public class StrinUtilTest1 {
 	@Test
 	public void containsIgnoreCaseTest() {
 		System.out.println();
-		assertEquals(StringUtil1.containsIgnoreCase("MAu ro", "ma"),true);
-		assertTrue(StringUtil1.containsIgnoreCase("Kola Real", "rEa"));
-		assertEquals(StringUtil1.containsIgnoreCase("ma", null), false);
-		assertEquals(StringUtil1.containsIgnoreCase(null, null), false);
+		assertEquals(StringUtil.containsIgnoreCase("MAu ro", "ma"),true);
+		assertTrue(StringUtil.containsIgnoreCase("Kola Real", "rEa"));
+		assertEquals(StringUtil.containsIgnoreCase("ma", null), false);
+		assertEquals(StringUtil.containsIgnoreCase(null, null), false);
 	}
 }
